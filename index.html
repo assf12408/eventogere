@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -6,8 +7,11 @@
 </head>
 <body>
 
+  <!-- Cabeçalho com o título e as estatísticas dos eventos -->
   <div class="header">
     <h1>🎓 Gerenciador de Eventos</h1>
+
+    <!-- Exibe a quantidade total, próxima e concluída de eventos -->
     <div class="stats">
         <div>Total: <span id="totalCount">0</span></div>
         <div>Próximos: <span id="upcomingCount">0</span></div>
@@ -15,44 +19,52 @@
     </div>
   </div>
 
-    <button onclick="toggleDarkMode()">🌙 Alternar Tema</button>
+  <!-- Botão para alternar entre os temas claro e escuro -->
+  <button onclick="toggleDarkMode()">🌙 Alternar Tema</button>
 
   <div class="container">
 
     <h1>🎓 Gerenciador de Eventos Acadêmicos</h1>
 
     <div class="form-container">
+
+      <!-- Abre a janela de cadastro de um novo evento -->
       <button class="add-btn" onclick="openModal()">+ Adicionar Evento</button>
 
+      <!-- Janela modal que contém o formulário de cadastro -->
       <div id="modal" class="modal">
         <div class="modal-content">
           <h2>Adicionar Evento</h2>
-          <span class="tag ${tagClass}">${event.category}</span>
 
           <input type="text" id="eventName" placeholder="Nome do evento">
           <input type="date" id="eventDate">
           <input type="text" id="eventLocation" placeholder="Local">
 
+          <!-- Permite selecionar a categoria do evento -->
           <select id="eventCategory">
             <option value="Technical">Tecnologia</option>
             <option value="Cultural">Cultura</option>
             <option value="Sports">Esportes</option>
           </select>
 
+          <!-- Salva os dados ou fecha a janela sem cadastrar -->
           <button onclick="addEvent()">Salvar</button>
           <button onclick="closeModal()">Cancelar</button>
         </div>
       </div>
     </div>
 
+    <!-- Campo de pesquisa que procura eventos pelo texto digitado -->
     <input type="text" id="search" placeholder="🔍 Buscar evento..." onkeyup="searchEvent()">
 
+    <!-- Filtra os eventos de acordo com o status -->
     <select id="filterStatus" onchange="applyFilters()">
       <option value="all">Todos</option>
       <option value="upcoming">Próximos</option>
       <option value="completed">Concluídos</option>
     </select>
 
+    <!-- Filtra os eventos de acordo com a categoria escolhida -->
     <select id="filterCategory" onchange="applyFilters()">
       <option value="all">Todas as categorias</option>
       <option value="Technical">Tecnologia</option>
@@ -60,25 +72,31 @@
       <option value="Sports">Esportes</option>
     </select>
 
+    <!-- Organiza os eventos dos mais recentes para os mais antigos ou vice-versa -->
     <select onchange="sortEvents(this.value)">
       <option value="newest">Mais recentes</option>
       <option value="oldest">Mais antigos</option>
     </select>
 
+    <!-- Área onde o JavaScript exibe a lista de eventos -->
     <div id="eventList"></div>
 
   </div>
 
+  <!-- Área utilizada para exibir mensagens de aviso ou confirmação -->
   <div id="toast" class="toast"></div>
 
+  <!-- Rodapé com os créditos do desenvolvedor -->
   <footer>
     <p>Desenvolvido por Aditya Singh | Bacharelado em Ciência da Computação</p>
   </footer>
 
+  <!-- Elemento utilizado para indicar o carregamento do sistema -->
   <div id="loader" class="loader"></div>
+
+  <!-- Carrega o arquivo JavaScript responsável pelas funcionalidades -->
+  <script src="script.js"></script>
 
 </body>
 </html>
-
-<script src="script.js"></script>
 ```
