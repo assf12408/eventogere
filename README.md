@@ -1,105 +1,48 @@
-# 🎓 College Event Manager (Pro Version)
+College Event Manager
 
-🚀 Live Demo:  https://theaditya01.github.io/event-management/
+A web application for managing college events, developed with HTML, CSS, and JavaScript.
 
-A modern and interactive frontend web application to manage college events efficiently. This project demonstrates complete CRUD operations with advanced UI/UX features, built using HTML, CSS, and JavaScript.
+FEATURES
 
----
+- Create, view, edit, and delete events (CRUD).
+- Search events by name.
+- Filter events by status and category.
+- Sort events by date.
+- Dashboard with event statistics.
+- Automatic event status detection.
+- Countdown timer for upcoming events.
+- Dark mode with saved preferences.
+- Notifications and modal forms.
+- Local data storage using localStorage.
+- Responsive interface with animations.
 
-## 📌 Overview
+TECHNOLOGIES
 
-The College Event Manager allows users to create, view, update, and delete events in a structured and visually appealing interface. The application is designed like a mini dashboard, including filtering, sorting, category tagging, and real-time status tracking.
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- localStorage
 
-It uses browser localStorage as a client-side database to store and manage event data without requiring a backend.
+LIVE DEMO
 
----
+https://theaditya01.github.io/event-management/
 
-## ✨ Key Features
+HOW IT WORKS
 
-### 🔹 Core Functionality
-- ➕ Add new events  
-- 📋 View events in responsive card layout  
-- ✏️ Edit existing events (proper update logic)  
-- ❌ Delete events with confirmation  
-- 💾 Persistent storage using localStorage  
+Events are created through a form and stored in the browser's localStorage. The application displays event information dynamically and allows users to search, filter, sort, and track events.
 
----
+FUTURE IMPROVEMENTS
 
-### 🔹 Advanced Features
-- 🔍 Search events by name  
-- 🎯 Filter by status (Upcoming / Completed)  
-- 🏷 Filter by category (Technical, Cultural, Sports)  
-- 🔃 Sort events (Newest / Oldest)  
-- 📊 Dashboard stats (Total, Upcoming, Completed)  
+- User authentication.
+- Backend integration.
+- Calendar view.
+- Notification system.
 
----
+AUTHOR
 
-### 🔹 Smart UI/UX Enhancements
-- 📅 Automatic event status detection  
-- ⏳ Countdown timer for upcoming events  
-- 🌙 Dark mode with persistence  
-- 🔔 Toast notifications (no alert usage)  
-- 🪟 Modal-based form input  
-- 🎨 Modern card-based responsive UI  
-- ⚡ Smooth animations and hover effects  
+Aditya Singh
+B.Tech Computer Science
 
----
+LICENSE
 
-## 🛠️ Tech Stack
-
-- **HTML5** – Structure  
-- **CSS3** – Styling, Grid, Flexbox, Animations  
-- **JavaScript (ES6)** – Logic, DOM manipulation  
-- **localStorage** – Client-side data storage  
-
----
-
-## 📂 Project Structure
-
-
-
-
----
-
-## ⚙️ How It Works
-
-- User inputs event details through a modal form  
-- Events are stored in localStorage  
-- Data is dynamically rendered using JavaScript  
-- Filters and sorting are applied on the event array  
-- Event status is calculated using date comparison  
-- Countdown shows remaining days for each event  
-
----
-
-
-
-## 🎯 Learning Outcomes
-
-- Implementation of CRUD operations  
-- DOM manipulation and event handling  
-- Client-side data persistence  
-- UI/UX improvement techniques  
-- Building responsive and interactive web apps  
-
----
-
-## ⚡ Future Improvements
-
-- 🔐 Authentication system (login/signup)  
-- 🌐 Backend integration (Node.js / Firebase)  
-- 📆 Calendar-based event view  
-- 🔔 Notification system  
-
----
-
-## 👨‍💻 Author
-
-**Aditya Singh**  
-B.Tech Computer Science  
-
----
-
-## 📄 License
-
-This project is for educational purposes.
+This project is intended for educational purposes.
