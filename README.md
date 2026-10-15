@@ -46,3 +46,7 @@ B.Tech Computer Science
 LICENSE
 
 This project is intended for educational purposes.
+
+MELHORIAS NA DOCUMENTAÇÃO
+
+Este projeto foi estudado como referência para compreender a organização de uma aplicação web de gerenciamento de eventos.
