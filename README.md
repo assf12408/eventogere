@@ -50,3 +50,7 @@ This project is intended for educational purposes.
 MELHORIAS NA DOCUMENTAÇÃO
 
 Este projeto foi estudado como referência para compreender a organização de uma aplicação web de gerenciamento de eventos.
+
+FUNCIONALIDADES DO PROJETO
+
+O sistema permite cadastrar, editar, excluir e pesquisar eventos, além de filtrar por categoria e status. Também oferece modo escuro e armazenamento local dos dados.
